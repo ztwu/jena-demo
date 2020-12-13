@@ -1,0 +1,1325 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.sim.whu.edu.cn/historytime.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.sim.whu.edu.cn/historytime.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="Xia">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >夏约前2070—前1600</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >夏</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="HistoricalTime"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="XiZhou">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >西周</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#HistoricalTime"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >西周，前1046—前771</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="XiHan">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >西汉时期</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#HistoricalTime"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >西汉时期，前206—公元23</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="DongJin">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >东晋时期</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >东晋    317-420</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#HistoricalTime"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Sui">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >隋朝时期</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#HistoricalTime"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >隋 589(灭陈)-618</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="BeiSong">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#HistoricalTime"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >北宋时期</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >北宋 960-1127</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="ZhanGuo">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >战国时期，前475—前221</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#HistoricalTime"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >战国时期</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="DongHan">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >东汉时期</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >东汉时期，25—220(魏建立)</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#HistoricalTime"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Yuan">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >元朝时期</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >元 1279(灭宋)-1368</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#HistoricalTime"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ThreeKingdom">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三国时期</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三国 220-280</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#HistoricalTime"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#HistoricalTime">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >历史时间</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >历史时间本体，用公元纪年表示其实例</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="XiJin">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >西晋时期</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >西晋 280(平吴)-316</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#HistoricalTime"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ChunQiu">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >春秋时期</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#HistoricalTime"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >春秋时期，前770—前476</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Qin">
+    <rdfs:subClassOf rdf:resource="#HistoricalTime"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >秦朝时期</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >秦，前221—前206</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Ming">
+    <rdfs:subClassOf rdf:resource="#HistoricalTime"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >明朝时期</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >明 1368-1644</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Shang">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >前1600—前1046</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#HistoricalTime"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >商</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="NanSong">
+    <rdfs:subClassOf rdf:resource="#HistoricalTime"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >南宋时期</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >南宋 1127-1279</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Other">
+    <rdfs:subClassOf rdf:resource="#HistoricalTime"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Tang">
+    <rdfs:subClassOf rdf:resource="#HistoricalTime"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >唐朝时期</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >唐 618-907</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="NanBeiChao">
+    <rdfs:label xml:lang="cha">南北朝时期</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#HistoricalTime"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >南北朝 420-589</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="WuDai">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >五代时期</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >五代    907-960</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#HistoricalTime"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasEndYear">
+    <rdfs:domain rdf:resource="#HistoricalTime"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >結束時間</rdfs:label>
+    <rdfs:range rdf:resource="#HistoricalTime"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="AD">
+    <rdfs:domain rdf:resource="#HistoricalTime"/>
+    <rdfs:range rdf:resource="#HistoricalTime"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasStartYear">
+    <rdfs:range rdf:resource="#HistoricalTime"/>
+    <rdfs:domain rdf:resource="#HistoricalTime"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >開始時間</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="relatedSentences">
+    <rdfs:domain rdf:resource="#HistoricalTime"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >地点或人物的相关语句</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >相关语句</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="frombook">
+    <rdfs:domain rdf:resource="#HistoricalTime"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >來自</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >历史人物所属的主要史书</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:ID="ancientTime">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >古代時間</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="#HistoricalTime"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >史籍底本中的时间</rdfs:comment>
+  </owl:FunctionalProperty>
+  <DongHan rdf:ID="公元206年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元206年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元238年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元238年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元147年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元147年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元188年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元188年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元183年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元183年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元252年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元252年</rdfs:label>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元約192年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約192年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元175年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元175年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元124年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元124年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元198年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元198年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元約213年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約213年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元約199年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約199年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="中平六年至初平三年_sanguozhi">
+    <hasStartYear>
+      <DongHan rdf:ID="公元189年_szn_sanguozhi">
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元189年</rdfs:label>
+      </DongHan>
+    </hasStartYear>
+    <ancientTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >中平六年至初平三年四月</ancientTime>
+    <hasEndYear>
+      <DongHan rdf:ID="公元192年_szn_sanguozhi">
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元192年</rdfs:label>
+      </DongHan>
+    </hasEndYear>
+  </DongHan>
+  <DongHan rdf:ID="公元157年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元157年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元約210年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約210年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元217年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元217年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元246年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元246年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元約248年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約248年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元166年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元166年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元142年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元142年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元245年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元245年</rdfs:label>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元約231年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約231年</rdfs:label>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元約163年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約163年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元153年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元153年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="建安十七年十二月至建安十九年五月_sanguozhi">
+    <hasEndYear>
+      <DongHan rdf:ID="公元214年_szn_sanguozhi">
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元214年</rdfs:label>
+      </DongHan>
+    </hasEndYear>
+    <hasStartYear>
+      <DongHan rdf:ID="公元212年_szn_sanguozhi">
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元212年</rdfs:label>
+      </DongHan>
+    </hasStartYear>
+    <ancientTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >建安十七年十二月至建安十九年五月</ancientTime>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元約221年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約221年</rdfs:label>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元168年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元168年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元274年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元274年</rdfs:label>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元227年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元227年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元約167年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約167年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元190年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元190年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元200年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元200年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元262年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元262年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元約141年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約141年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元128年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元128年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元163年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元163年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元181年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元181年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元約244年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約244年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元158年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元158年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元170年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元170年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元約209年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約209年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元約224年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約224年</rdfs:label>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元約181年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約181年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元251年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元251年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元176年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元176年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元247年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元247年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元約169年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約169年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元204年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元204年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元約159年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約159年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元約252年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約252年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元172年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元172年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <XiJin rdf:ID="公元約292年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約292年</rdfs:label>
+  </XiJin>
+  <ThreeKingdom rdf:ID="公元220年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元220年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元179年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元179年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元265年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元265年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元160年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元160年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元193_194年_sanguozhi">
+    <hasStartYear>
+      <DongHan rdf:ID="公元193年_szn_sanguozhi">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元193年</rdfs:label>
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+      </DongHan>
+    </hasStartYear>
+    <hasEndYear>
+      <DongHan rdf:ID="公元194年_szn_sanguozhi">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元194年</rdfs:label>
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+      </DongHan>
+    </hasEndYear>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元174年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元174年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元229年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元229年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元215年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元215年</rdfs:label>
+  </DongHan>
+  <XiJin rdf:ID="公元287年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元287年</rdfs:label>
+  </XiJin>
+  <XiJin rdf:ID="公元283年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元283年</rdfs:label>
+  </XiJin>
+  <ThreeKingdom rdf:ID="公元243年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元243年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元152年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元152年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元275年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元275年</rdfs:label>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元約229年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約229年</rdfs:label>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元161年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元161年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元196年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元196年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元178年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元178年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元約215年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約215年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元278年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元278年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元207年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元207年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元255年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元255年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元132年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元132年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元194_195年_sanguozhi">
+    <hasStartYear>
+      <DongHan rdf:ID="公元195年_szn_sanguozhi">
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元195年</rdfs:label>
+      </DongHan>
+    </hasStartYear>
+    <hasEndYear rdf:resource="#公元195年_szn_sanguozhi"/>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元228年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元228年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元273年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元273年</rdfs:label>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元230年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元230年</rdfs:label>
+  </ThreeKingdom>
+  <XiJin rdf:ID="公元282年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元282年</rdfs:label>
+  </XiJin>
+  <ThreeKingdom rdf:ID="公元249年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元249年</rdfs:label>
+  </ThreeKingdom>
+  <XiJin rdf:ID="公元284年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元284年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </XiJin>
+  <ThreeKingdom rdf:ID="公元272年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元272年</rdfs:label>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元240年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元240年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="嘉禾二年至嘉禾三年_sanguozhi">
+    <hasEndYear>
+      <ThreeKingdom rdf:ID="公元234年_szn_sanguozhi">
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元234年</rdfs:label>
+      </ThreeKingdom>
+    </hasEndYear>
+    <ancientTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >嘉禾二年至嘉禾三年</ancientTime>
+    <hasStartYear>
+      <ThreeKingdom rdf:ID="公元233年_szn_sanguozhi">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元233年</rdfs:label>
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+      </ThreeKingdom>
+    </hasStartYear>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元約234年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約234年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元156年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元156年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元164年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元164年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元187年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元187年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元210年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元210年</rdfs:label>
+  </DongHan>
+  <XiJin rdf:ID="公元290年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元290年</rdfs:label>
+  </XiJin>
+  <DongHan rdf:ID="公元約155年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約155年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元239年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元239年</rdfs:label>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="蜀彰武元年至彰武二年_sanguozhi">
+    <hasStartYear>
+      <ThreeKingdom rdf:ID="公元221年_szn_sanguozhi">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元221年</rdfs:label>
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+      </ThreeKingdom>
+    </hasStartYear>
+    <ancientTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >蜀彰武元年至彰武二年</ancientTime>
+    <hasEndYear>
+      <ThreeKingdom rdf:ID="公元222年_szn_sanguozhi">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元222年</rdfs:label>
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+      </ThreeKingdom>
+    </hasEndYear>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元237年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元237年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元約168年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約168年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <ThreeKingdom rdf:ID="魏黄初五年至黄初六年_sanguozhi">
+    <hasEndYear>
+      <ThreeKingdom rdf:ID="公元225年_szn_sanguozhi">
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元225年</rdfs:label>
+      </ThreeKingdom>
+    </hasEndYear>
+    <ancientTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >魏黄初五年至黄初六年</ancientTime>
+    <hasStartYear>
+      <ThreeKingdom rdf:ID="公元224年_szn_sanguozhi">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元224年</rdfs:label>
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+      </ThreeKingdom>
+    </hasStartYear>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元約165年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約165年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元259年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元259年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="吴黄武元年至黄武二年_sanguozhi">
+    <hasEndYear>
+      <ThreeKingdom rdf:ID="公元223年_szn_sanguozhi">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元223年</rdfs:label>
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+      </ThreeKingdom>
+    </hasEndYear>
+    <ancientTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >吴黄武元年至黄武二年</ancientTime>
+    <hasStartYear rdf:resource="#公元222年_szn_sanguozhi"/>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="建安二年至建安四年_sanguozhi">
+    <hasStartYear>
+      <DongHan rdf:ID="公元197年_szn_sanguozhi">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元197年</rdfs:label>
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+      </DongHan>
+    </hasStartYear>
+    <hasEndYear>
+      <DongHan rdf:ID="公元199年_szn_sanguozhi">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元199年</rdfs:label>
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+      </DongHan>
+    </hasEndYear>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元248年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元248年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元約197年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約197年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元241年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元241年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元208年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元208年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元約220年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約220年</rdfs:label>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元253年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元253年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元約251年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約251年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元260年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元260年</rdfs:label>
+  </ThreeKingdom>
+  <XiJin rdf:ID="公元308年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元308年</rdfs:label>
+  </XiJin>
+  <DongHan rdf:ID="公元182年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元182年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元236年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元236年</rdfs:label>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元269年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元269年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="赤乌五年至赤乌十三年_sanguozhi">
+    <ancientTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >赤乌五年至赤乌十三年</ancientTime>
+    <hasEndYear>
+      <ThreeKingdom rdf:ID="公元250年_szn_sanguozhi">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元250年</rdfs:label>
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+      </ThreeKingdom>
+    </hasEndYear>
+    <hasStartYear>
+      <ThreeKingdom rdf:ID="公元242年_szn_sanguozhi">
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元242年</rdfs:label>
+      </ThreeKingdom>
+    </hasStartYear>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元209年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元209年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <ThreeKingdom rdf:ID="魏景元四年至景元五年_sanguozhi">
+    <hasStartYear>
+      <ThreeKingdom rdf:ID="公元263年_szn_sanguozhi">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元263年</rdfs:label>
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+      </ThreeKingdom>
+    </hasStartYear>
+    <hasEndYear>
+      <ThreeKingdom rdf:ID="公元264年_szn_sanguozhi">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元264年</rdfs:label>
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+      </ThreeKingdom>
+    </hasEndYear>
+    <ancientTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >魏景元四年至景元五年</ancientTime>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元171年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元171年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元191年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元191年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元216年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元216年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元180年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元180年</rdfs:label>
+  </DongHan>
+  <XiJin rdf:ID="公元280年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元280年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </XiJin>
+  <ThreeKingdom rdf:ID="天纪三年冬至天纪四年春_sanguozhi"/>
+  <DongHan rdf:ID="公元173年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元173年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元231年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元231年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元137年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元137年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元203年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元203年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元約200年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約200年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元約239年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約239年</rdfs:label>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元136年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元136年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元151年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元151年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元202年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元202年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <XiJin rdf:ID="公元302年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元302年</rdfs:label>
+  </XiJin>
+  <DongHan rdf:ID="公元162年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元162年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元169年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元169年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元235年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元235年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元226年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元226年</rdfs:label>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元266年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元266年</rdfs:label>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元270年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元270年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元141年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元141年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元261年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元261年</rdfs:label>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元約223年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約223年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元205年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元205年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元155年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元155年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元244年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元244年</rdfs:label>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元256年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元256年</rdfs:label>
+  </ThreeKingdom>
+  <DongHan rdf:ID="建安二十三年至建安二十四年_sanguozhi">
+    <hasStartYear>
+      <DongHan rdf:ID="公元218年_szn_sanguozhi">
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元218年</rdfs:label>
+      </DongHan>
+    </hasStartYear>
+    <ancientTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >建安二十三年至建安二十四年</ancientTime>
+    <hasEndYear>
+      <DongHan rdf:ID="公元219年_szn_sanguozhi">
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元219年</rdfs:label>
+      </DongHan>
+    </hasEndYear>
+  </DongHan>
+  <DongHan rdf:ID="公元184年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元184年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元271年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元271年</rdfs:label>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元約253年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約253年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="甘露二年至三年_sanguozhi">
+    <hasEndYear>
+      <ThreeKingdom rdf:ID="公元258年_szn_sanguozhi">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元258年</rdfs:label>
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+      </ThreeKingdom>
+    </hasEndYear>
+    <hasStartYear>
+      <ThreeKingdom rdf:ID="公元257年_szn_sanguozhi">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >公元257年</rdfs:label>
+        <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >三國志</frombook>
+      </ThreeKingdom>
+    </hasStartYear>
+    <ancientTime rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >甘露二年至三年</ancientTime>
+  </ThreeKingdom>
+  <ThreeKingdom rdf:ID="公元254年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元254年</rdfs:label>
+  </ThreeKingdom>
+  <XiJin rdf:ID="公元301年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元301年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </XiJin>
+  <DongHan rdf:ID="公元213年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元213年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <DongHan rdf:ID="公元約153年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約153年</rdfs:label>
+  </DongHan>
+  <DongHan rdf:ID="公元177年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元177年</rdfs:label>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元約227年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元約227年</rdfs:label>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元186年_szn_sanguozhi">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元186年</rdfs:label>
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+  </DongHan>
+  <ThreeKingdom rdf:ID="公元232年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元232年</rdfs:label>
+  </ThreeKingdom>
+  <DongHan rdf:ID="公元154年_szn_sanguozhi">
+    <frombook rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >三國志</frombook>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >公元154年</rdfs:label>
+  </DongHan>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.4, Build 579)  http://protege.stanford.edu -->
